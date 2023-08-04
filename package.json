@@ -1,0 +1,22 @@
+{
+  "name": "xiaobai",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "index.html"
+  },
+  "vercel": {
+    "builds": [
+      {
+        "src": "index.html",
+        "use": "@vercel/static-build",
+        "config": {}
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "/index.html"
+      }
+    ]
+  }
+}
